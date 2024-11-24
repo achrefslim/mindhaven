@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Professional Assistance - MindHaven</title>
+    <link rel="stylesheet" href="assistant.css" />
+    <script src="assistant.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>
+          <img
+            src="C:\Users\charfoun\Desktop\task bootcamp\Capture_d_écran_2024-11-23_233331-removebg-preview.png"
+            alt="MindHaven"
+            style="width: 250px; height: auto"
+          />
+        </h1>
+        <nav class="navbar">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="interactive.html">Interactive Tools</a></li>
+
+            <li><a href="subscription.html">Subscription</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-section">
+        <div class="hero-text">
+          <h2>Professional Assistance</h2>
+          <p>Access appointments and emergency services.</p>
+        </div>
+      </section>
+
+      <section id="access" class="content-section">
+        <div class="container">
+          <h2>Access Portal</h2>
+          <form id="access-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required />
+
+            <label for="access-code">Access Code:</label>
+            <input type="password" id="access-code" required />
+
+            <button type="submit">Enter</button>
+          </form>
+          <div id="access-error" class="error-message"></div>
+        </div>
+      </section>
+
+      <section id="professional-services" class="content-section hidden">
+        <div class="container">
+          <h2>Professional Services</h2>
+          <div class="card-list">
+            <div class="card">
+              <img
+                src="C:\Users\charfoun\Desktop\task bootcamp\istockphoto-1490764451-612x612.jpg"
+                alt="Dr. John Doe"
+              />
+              <div class="card-info">
+                <h3>Dr. John Doe</h3>
+                <p>Specialization: Anxiety & Depression</p>
+                <button onclick="bookAppointment('Dr. John Doe')">
+                  Book Appointment
+                </button>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="C:\Users\charfoun\Desktop\task bootcamp\istockphoto-1270067126-612x612.jpg"
+                alt="Dr. Jane Smith"
+              />
+              <div class="card-info">
+                <h3>Dr. Jane Smith</h3>
+                <p>Specialization: Stress Management</p>
+                <button onclick="bookAppointment('Dr. Jane Smith')">
+                  Book Appointment
+                </button>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="C:\Users\charfoun\Desktop\task bootcamp\istockphoto-1413764595-612x612.jpg"
+                alt="Dr. Emily Davis"
+              />
+              <div class="card-info">
+                <h3>Dr. Emily Davis</h3>
+                <p>Specialization: Cognitive Behavioral Therapy</p>
+                <button onclick="bookAppointment('Dr. Emily Davis')">
+                  Book Appointment
+                </button>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="C:\Users\charfoun\Desktop\task bootcamp\happy-middle-aged-professional-business-260nw-2454390621.webp"
+                alt="Dr. Michael Brown"
+              />
+              <div class="card-info">
+                <h3>Dr. Michael Brown</h3>
+                <p>Specialization: Adolescent Mental Health</p>
+                <button onclick="bookAppointment('Dr. Michael Brown')">
+                  Book Appointment
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="emergency-services" class="content-section hidden">
+        <div class="container">
+          <h2>Emergency Services</h2>
+          <ul>
+            <li>
+              Emergency Hotline: <a href="tel:+21693466720">+216 93466720</a>
+            </li>
+            <li>
+              Mental Health Hotline:
+              <a href="tel:+0987654321">+216 53534980</a>
+            </li>
+            <!-- Add more emergency services as needed -->
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 MindHaven. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

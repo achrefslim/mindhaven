@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doctor Dashboard - MindHaven</title>
+    <link rel="stylesheet" href="doctor.css" />
+    <script src="doctor.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>MindHaven</h1>
+        <nav class="navbar">
+          <ul>
+            <li><a href="welcome.html">Home</a></li>
+            <li><a href="interactive.html">Interactive Tools</a></li>
+
+            <li><a href="subscription.html">Subscription</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-section">
+        <div class="hero-text">
+          <h2>Doctor Dashboard</h2>
+          <p>Manage your patients and their activities.</p>
+        </div>
+      </section>
+
+      <section id="dashboard" class="content-section">
+        <div class="container">
+          <div class="dashboard-options">
+            <button onclick="showSection('add-patient')">Add Patient</button>
+            <button onclick="showSection('patient-list')">
+              View Patient List
+            </button>
+          </div>
+          <div id="patient-list" class="hidden">
+            <h3>Patient List</h3>
+            <div id="patient-list-content"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Add Patient Section -->
+      <section id="add-patient" class="content-section hidden">
+        <div class="container">
+          <h2>Add Patient</h2>
+          <form id="add-patient-form">
+            <label for="patient-name">Patient Name:</label>
+            <input type="text" id="patient-name" required />
+
+            <label for="patient-email">Email:</label>
+            <input type="email" id="patient-email" required />
+
+            <label for="patient-age">Age:</label>
+            <input type="number" id="patient-age" required />
+
+            <label for="patient-gender">Gender:</label>
+            <select id="patient-gender" required>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+            </select>
+
+            <button type="submit">Add Patient</button>
+          </form>
+          <div id="add-patient-status" class="status-message"></div>
+        </div>
+      </section>
+
+      <!-- Manage Patient Section -->
+      <section id="manage-patient" class="content-section hidden">
+        <div class="container">
+          <h2>Manage Patient</h2>
+          <form id="manage-patient-form">
+            <label for="manage-patient-name">Patient Name:</label>
+            <input type="text" id="manage-patient-name" required disabled />
+
+            <button type="button" onclick="removePatient()">
+              Remove Patient
+            </button>
+            <button type="button" onclick="readReport()">Read Report</button>
+            <button type="button" onclick="showSection('add-score')">
+              Add Score
+            </button>
+          </form>
+          <div id="manage-patient-status" class="status-message"></div>
+        </div>
+      </section>
+
+      <!-- Add Score Section -->
+      <section id="add-score" class="content-section hidden">
+        <div class="container">
+          <h2>Add Score</h2>
+          <form id="add-score-form">
+            <label for="score-patient-name">Patient Name:</label>
+            <input type="text" id="score-patient-name" required disabled />
+
+            <label for="score-activity">Activity:</label>
+            <input type="text" id="score-activity" required />
+
+            <label for="points">Points:</label>
+            <input type="number" id="points" required />
+
+            <button type="submit">Add Points</button>
+          </form>
+          <div id="add-score-status" class="status-message"></div>
+        </div>
+      </section>
+
+      <!-- Report Section -->
+      <section id="report" class="content-section hidden">
+        <div class="container">
+          <h2>Patient Report</h2>
+          <div id="patient-report"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 MindHaven. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

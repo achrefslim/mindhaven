@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Page</title>
+    <link rel="icon" type="image/png" href="197467.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="home1.css" />
+  </head>
+  <body>
+    <header align="center">
+      <a href="welcome.html">
+        <img
+          class="logo"
+          src="Capture_d_écran_2024-11-23_233331-removebg-preview.png"
+          alt="Website Icon"
+          width="300"
+        />
+      </a>
+    </header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="welcome.html">Home</a></li>
+        <li><a href="subscription.html">Membership</a></li>
+       
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Sign in/Sign up</a></li>
+      </ul>
+    </nav>
+    <main align="center">
+      <div class="product-container">
+        <div class="product">
+          <div class="product-image" onclick="expandImage(this)">
+            <img
+              src="C:\Users\charfoun\Desktop\task bootcamp\c17d8ce3-8f84-420f-8e90-e95b76b3e36c.jpg"
+              alt="Product 1"
+              width="300"
+            />
+          </div>
+          <div class="product-info">
+            <span class="product-name">book</span>
+            <span class="product-price">$10.00</span>
+            <span class="product-description">The Power of Now by Eckhart Tolle.</span>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-image" onclick="expandImage(this)">
+            <img
+              src="9f2efafa-9bd5-43f3-abe1-9095506f2b6f.jpg"
+              alt="Product 2"
+              width="300"
+            />
+          </div>
+          <div class="product-info">
+            <span class="product-name">book</span>
+            <span class="product-price">$15.00</span>
+            <span class="product-description">
+              Practicing The Power of Now: Essential teachings, meditations, </br>and exercises for a liberated life by Eckhart Tolle (2015).
+            </span>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-image" onclick="expandImage(this)">
+            <img
+              src="952186f4-d3f7-4130-b45c-8d7a357d9e23.jpg"
+              alt="Product 3"
+              width="300"
+            />
+          </div>
+          <div class="product-info">
+            <span class="product-name">book</span>
+            <span class="product-price">$20.00</span>
+            <span class="product-description">
+              The Art of Inner Calm: </br>A wisdom book that brings us </br>back to the essentials by Eckhart Tolle</br> (October 1, 2011).
+            </span>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-image" onclick="expandImage(this)">
+            <img
+              src="ee230481-86af-4bcb-bafe-16e63ad01131.jpg"
+              alt="Product 4"
+              width="300"
+            />
+          </div>
+          <div class="product-info">
+            <span class="product-name">book</span>
+            <span class="product-price">$25.00</span>
+            <span class="product-description">
+              How to Let Go in 21 Days: </br>Free yourself from negative emotions, </br>express your potential, and be fulfilled </br>by George Howell (Author), February 24, 2024.
+            </span>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-image" onclick="expandImage(this)">
+            <img
+              src="under_control-5426125-264-432.jpg"
+              alt="Product 5"
+              width="300"
+            />
+          </div>
+          <div class="product-info">
+            <span class="product-name">book</span>
+            <span class="product-price">$30.00</span>
+            <span class="product-description">
+              Stop Trying to Control Everything: </br>Learn to Let Go with Minimal Effort by Camille ALLAIN (Author),</br> January 30, 2023. 3.0 out of 5 stars (2 ratings).
+            </span>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-image" onclick="expandImage(this)">
+            <img
+              src="71Ha3OShqSL.jpg"
+              alt="Product 6"
+              width="300"
+            />
+          </div>
+          <div class="product-info">
+            <span class="product-name">book</span>
+            <span class="product-price">$35.00</span>
+            <span class="product-description">
+              The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma.
+            </span>
+          </div>
+        </div>
+
+      <!-- Expanded Image Overlay -->
+      <div class="overlay" id="imageOverlay" onclick="closeImage()">
+        <span class="close">&times;</span>
+        <img class="expanded-image" id="expandedImage" src="" alt="" />
+        <div id="expandedDescription" class="expanded-description"></div>
+        <div id="expandedPrice" class="expanded-price"></div>
+      </div>
+    </main>
+
+    <footer align="center">
+      <a
+        href="https://www.facebook.com/profile.php?id=61569568192677"
+        target="_blank"
+        class="social-icon"
+      >
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a
+        href="https://www.facebook.com/profile.php?id=61569568192677"
+        target="_blank"
+        class="social-icon"
+      >
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a
+        href="https://www.facebook.com/profile.php?id=61569568192677"
+        target="_blank"
+        class="social-icon"
+      >
+        <i class="fab fa-instagram"></i>
+      </a>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- Link to the external JavaScript file -->
+  </body>
+</html>
