@@ -30,7 +30,7 @@ The relaxation page plays `website/media/meditation.mp3` and `website/media/ocea
 | 2 | Welcome | Use the top menu: Tests, Videos, Articles, Podcasts, Chat anonymously, Interactive Tools, Product, Contact |
 | 3 | Interactive tools | Play the audio or video relaxation, write in the **Digital Journal** and save it, take a self assessment test |
 | 4 | Community support | Write a message in the anonymous chat |
-| 5 | Professional assistance | Choose a professional and book an appointment, or find emergency numbers |
+| 5 | Professional assistance | Enter the demo access (name `demo`, access code `12345`), then choose a professional and book an appointment, or find emergency numbers |
 | 6 | Doctor dashboard | Add a patient, manage the patient list, add a score and view the patient report |
 | 7 | Subscription | Compare the monthly, 3 month and annual plans |
 | 8 | Contact | Send a message to the team |

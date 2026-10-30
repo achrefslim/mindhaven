@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const accessCode = document.getElementById("access-code").value;
 
     // Example credentials for validation
-    const validName = "achref slimen";
+    const validName = "demo";
     const validAccessCode = "12345";
 
     if (name === validName && accessCode === validAccessCode) {
